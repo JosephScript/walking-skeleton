@@ -3,7 +3,7 @@ var router = express.Router();
 var mongoose = require('mongoose');
 var path = require('path');
 
-mongoose.connect('mongodb://localhost/basic_walking_skeleton');
+mongoose.connect('mongodb://localhost:27017/basic_walking_skeleton');
 
 var Cat = mongoose.model('Cat', { name: String });
 
