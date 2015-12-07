@@ -8,7 +8,7 @@ module.exports = function(grunt) {
             },
             build: {
                 src: 'client/app.js',
-                dest: 'server/public/assets/scripts/app.min.js'
+                dest: 'public/assets/scripts/app.min.js'
             }
         },
         copy: {
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
                     "angular/angular.min.js.map",
                     "angular/angular-csp.css"
                 ],
-                "dest": "server/public/vendor/"
+                "dest": "public/vendor/"
             }
         }
     });

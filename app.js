@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 
 var index = require('./routes/index');
 app.use('/', index);
-app.use(express.static(path.join(__dirname, './server/public')));
+app.use(express.static(path.join(__dirname, './public')));
 
 var server = app.listen(3000, function(){
     var port = server.address().port;
